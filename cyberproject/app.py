@@ -1,3 +1,5 @@
+#The code is from the hands of Program Bee and collabairation with Circuit Seekers 
+#All the righrs reseverd to ProgramBees and Circuit seekers 2024.
 from flask import Flask, render_template, request, redirect, url_for, session, send_file, jsonify, flash
 from pymongo import MongoClient
 import bcrypt
@@ -53,7 +55,7 @@ def detect_links(message):
     url_pattern = re.compile(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+')
     links = url_pattern.findall(message)
     return links
-
+# Rights Resevred to PS AND CS
 @app.route('/')
 def index():
     return redirect(url_for('login'))
@@ -262,3 +264,6 @@ def download_file(file_id):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+#The code is from the hands of Program Bee and collabairation with Circuit Seekers 
+#All the righrs reseverd to ProgramBees and Circuit seekers 2024.
